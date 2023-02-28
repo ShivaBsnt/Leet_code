@@ -1,0 +1,6 @@
+class Solution(object):
+    def restoreString(self, s, indices):
+        res = [''] * len(s)
+        for index, char in enumerate(s):
+            res[indices[index]] = char
+        return "".join(res) 
