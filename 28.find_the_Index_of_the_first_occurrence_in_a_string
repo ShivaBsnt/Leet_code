@@ -1,0 +1,10 @@
+class Solution(object):
+    def strStr(self, haystack, needle):
+        needle_length =len(needle)
+        i=0
+        while i <= len(haystack):
+            sliced = haystack[i:i+needle_length]
+            if sliced == needle:
+                return i
+            i+=1
+        return -1
