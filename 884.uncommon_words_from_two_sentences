@@ -1,0 +1,9 @@
+class Solution(object):
+    def uncommonFromSentences(self, s1, s2):
+        s1 = s1.split()
+        s2 = s2.split()
+        s = s1+s2
+        count = Counter(s)
+        arr = [k for k,v in count.iteritems() if v==1]
+        return arr
+    
